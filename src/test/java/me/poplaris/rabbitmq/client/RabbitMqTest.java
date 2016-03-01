@@ -39,15 +39,15 @@ public class RabbitMqTest{
 		System.out.println("current times before");
 	}
 	
-	@Test
-	public void sendString() throws SendRefuseException {
-		eventTemplate.send(defaultQueue, defaultExchange, "hello world");
-	}
-	
-	@Test
-	public void sendObject() throws SendRefuseException{
-		eventTemplate.send(defaultQueue, defaultExchange, mockObj());
-	}
+//	@Test
+//	public void sendString() throws SendRefuseException {
+//		eventTemplate.send(defaultQueue, defaultExchange, "hello world");
+//	}
+//	
+//	@Test
+//	public void sendObject() throws SendRefuseException{
+//		eventTemplate.send(defaultQueue, defaultExchange, mockObj());
+//	}
 	
 	@Test
 	public void sendTemp() throws SendRefuseException, InterruptedException{
