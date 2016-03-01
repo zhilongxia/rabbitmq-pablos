@@ -36,6 +36,7 @@ public class RabbitMqTest{
 		eventTemplate = controller.getEopEventTemplate();
 		controller.add(defaultQueue, defaultExchange, new ApiProcessEventProcessor());
 		controller.start();
+		System.out.println("current times before");
 	}
 	
 	@Test
@@ -59,6 +60,7 @@ public class RabbitMqTest{
 	
 	@After
 	public void end() throws InterruptedException{
+		System.out.println("sleep");
 		Thread.sleep(2000);
 	}
 	
