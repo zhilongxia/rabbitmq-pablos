@@ -95,8 +95,8 @@ public class RabbitMqTest{
 			System.out.println(e);
 			if(e instanceof People){
 				People people = (People)e;
-				System.out.println(people.getSpouse());
-				System.out.println(people.getFriends());
+				System.out.println("spouse:" + people.getSpouse());
+				System.out.println("friends:" + people.getFriends());
 			}
 		}
 	}
